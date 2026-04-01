@@ -4,7 +4,13 @@
 
 s = input()
 
-first = s.find('f')         
-second = s.find('f', first + 1)  
+first = s.find('f')
 
-print(second)
+if first == -1:
+    print(-2)
+else:
+    second = s.find('f', first + 1)
+    if second == -1:
+        print(-1)
+    else:
+        print(second)
